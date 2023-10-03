@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: r;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+@font-face {
+    font-family: r;
+    src: url(./5fefec2b3d8f862ba6f9e015_PlusJakartaDisplay-Regular.ttf);
+}
+
+@font-face {
+    font-family: b;
+    src: url(./5fefec2b51352b01a3f07d6c_PlusJakartaDisplay-Bold.ttf);
+}
+
+@font-face {
+    font-family: l;
+    src: url(./5fefec2b973b9b027d22c1f1_PlusJakartaDisplay-Light.ttf);
+}
+
+@font-face {
+    font-family:m ;
+    src: url(./5fefec2bb7e494bef790bc4c_PlusJakartaDisplay-Medium.ttf);
+}
+
+#main{
+    width: 100%;
+}
+
+#page1{
+    width: 100vw;
+    height: 100vh;
+    background-color:#fff;
+}
+
+#nav{
+    width: 100%;
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#nleft{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nleft h1{
+    font-family: b;
+    font-size: 27px;
+    padding-left: 200px;
+    white-space:nowrap;
+}
+
+#nleft span{
+    background-image: linear-gradient(108deg, #b16cea 8%, #ff5e69 40%, #ff8a56 77%, #ffa84b 91%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    background-size: contain;
+}
+
+#nleft a{
+    text-decoration: none;
+    color: #000;
+}
+
+#nright{
+    width: 44%;
+    height: 100%;
+    display: flex;
+    
+    align-items: center;
+    gap: 40px;
+    
+    
+}
+
+#nright a{
+    text-decoration: none;
+    color: #000;
+    font-family: m;
+    font-size: 16px;
+    transition:linear 0.1s;
+}
+
+#nright i{
+    font-size: 19px;
+    font-weight: 500;
+    
+}
+
+#nright a:hover{
+    color: grey;
+}
+
+#nright :nth-child(5):hover #navarrow{
+    padding-left: 10px;
+}
+
+#nright :nth-child(5):hover{
+    color: #000;
+}
+
+#nright :nth-child(5) i{
+    transition: linear 0.2s;
+}
+
+#page2{
+    width: 100vw;
+    height: 100vh;
+    background-color:blue;
+}
+
+
+
+
