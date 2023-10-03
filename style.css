@@ -1,11 +1,12 @@
-*{
+* {
     padding: 0;
     box-sizing: border-box;
     margin: 0;
     font-family: r;
 }
 
-html,body{
+html,
+body {
     width: 100%;
     height: 100%;
 }
@@ -26,21 +27,22 @@ html,body{
 }
 
 @font-face {
-    font-family:m ;
+    font-family: m;
     src: url(./5fefec2bb7e494bef790bc4c_PlusJakartaDisplay-Medium.ttf);
 }
 
-#main{
+#main {
     width: 100%;
 }
 
-#page1{
+#page1 {
     width: 100vw;
     height: 100vh;
-    background-color:#fff;
+    background-color: #fff;
+    position: relative;
 }
 
-#nav{
+#nav {
     width: 100%;
     height: 110px;
     display: flex;
@@ -48,7 +50,7 @@ html,body{
 
 }
 
-#nleft{
+#nleft {
     width: 35%;
     height: 100%;
     display: flex;
@@ -56,14 +58,14 @@ html,body{
     align-items: center;
 }
 
-#nleft h1{
+#nleft h1 {
     font-family: b;
     font-size: 27px;
     padding-left: 200px;
-    white-space:nowrap;
+    white-space: nowrap;
 }
 
-#nleft span{
+#nleft span {
     background-image: linear-gradient(108deg, #b16cea 8%, #ff5e69 40%, #ff8a56 77%, #ffa84b 91%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -71,58 +73,156 @@ html,body{
     background-size: contain;
 }
 
-#nleft a{
+#nleft a {
     text-decoration: none;
     color: #000;
 }
 
-#nright{
+#nright {
     width: 44%;
     height: 100%;
     display: flex;
-    
+
     align-items: center;
     gap: 40px;
-    
-    
+
+
 }
 
-#nright a{
+#nright a {
     text-decoration: none;
     color: #000;
     font-family: m;
     font-size: 16px;
-    transition:linear 0.1s;
+    transition: linear 0.1s;
 }
 
-#nright i{
+
+
+#nright i {
     font-size: 19px;
     font-weight: 500;
-    
+
 }
 
-#nright a:hover{
+#nright a:hover {
     color: grey;
 }
 
-#nright :nth-child(5):hover #navarrow{
+#nright :nth-child(5):hover #navarrow {
     padding-left: 10px;
 }
 
-#nright :nth-child(5):hover{
+#nright :nth-child(5):hover {
     color: #000;
 }
 
-#nright :nth-child(5) i{
+#nright :nth-child(5) i {
     transition: linear 0.2s;
 }
 
-#page2{
-    width: 100vw;
-    height: 100vh;
-    background-color:blue;
+#page1 h1 span {
+    background-image: linear-gradient(108deg, #b16cea 8%, #ff5e69 40%, #ff8a56 77%, #ffa84b 91%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: b;
+
+}
+
+#page1>h1 {
+    font-size: 78px;
+    font-family: b;
+    width: 600px;
+    position: absolute;
+    top: 22%;
+    left: 17.5%;
+    line-height: 80px;
+    letter-spacing: -2px;
+
+}
+
+#page1>h2 {
+    color: #666666;
+    font-family: l;
+    font-size: 23px;
+    position: absolute;
+    top: 50%;
+    left: 17.5%;
+    font-weight: 500;
 }
 
 
-check
 
+#colour {
+    width: 150px;
+    height: 57px;
+    background-image: linear-gradient(108deg, #b16cea 8%, #ff5e69 40%, #ff8a56 77%, #ffa84b 91%);
+    
+    
+    position: relative;
+}
+
+#black {
+    width: 150px;
+    height: 57px;
+    background-color: black;
+    position: absolute;
+    right: 5%;
+    bottom: 12%;
+    transition: linear .2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#black>p{
+    color: #fff;
+    font-family: m;
+    font-size: 18px;
+}
+
+#black:hover {
+    right: 0%;
+    bottom: 0%;
+}
+
+#aandcolor>a{
+    font-family: b;
+    font-size: 18px;
+    font-weight: 900;
+   
+    padding-bottom:9px;
+    
+    text-decoration: none;
+    color: #000;
+}
+
+#aandcolor>a:hover #resumearrow{
+    padding-left: 10px;
+}
+
+#resumearrow{
+    transition: linear 0.2s;
+}
+
+#aandcolor{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    left: 18%;
+    top: 62%;
+    position: absolute;
+}
+
+#page2 {
+    width: 100vw;
+    height: 100vh;
+    background-color: blue;
+    position: relative;
+}
+
+#c{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}

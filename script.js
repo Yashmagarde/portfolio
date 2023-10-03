@@ -36,3 +36,50 @@ ScrollTrigger.refresh();
 }
 
 loco()
+
+var a = 1
+var page1 = document.querySelector("#page1")
+var button = document.querySelector("#c")
+
+
+button.addEventListener("click",function(){
+
+  if(a==1){
+    a = 0
+  page1.style.backgroundColor = "#000"
+  document.querySelector("#nleft a").style.color = "#fff"
+  document.querySelector("#page1>h1").style.color = "#fff"
+  document.querySelector("#black").style.backgroundColor = "#fff"
+  document.querySelector("#black>p").style.color = "#000"
+  document.querySelector("#aandcolor>a").style.color = "#fff"
+  document.querySelector("#nlinks1").style.color = "#fff"
+  document.querySelector("#nlinks2").style.color = "#fff"
+  document.querySelector("#nlinks3").style.color = "#fff"
+  document.querySelector("#nlinks4").style.color = "#fff"
+  document.querySelector("#nlinks5").style.color = "#fff"
+
+
+  
+  }
+  else{
+    page1.style.backgroundColor = "white"
+    document.querySelector("#nleft a").style.color = "#000"
+    document.querySelector("#page1>h1").style.color = "#000"
+    document.querySelector("#black").style.backgroundColor = "#000"
+    document.querySelector("#black>p").style.color = "#fff"
+    document.querySelector("#aandcolor>a").style.color = "#000"
+    document.querySelector("#nlinks1").style.color = "#000"
+  document.querySelector("#nlinks2").style.color = "#000"
+  document.querySelector("#nlinks3").style.color = "#000"
+  document.querySelector("#nlinks4").style.color = "#000"
+  document.querySelector("#nlinks5").style.color = "#000"
+
+
+
+
+
+    a = 1
+  }
+})
+
+
