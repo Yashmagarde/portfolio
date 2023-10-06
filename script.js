@@ -122,3 +122,53 @@ button.addEventListener("click", function () {
 })
 
 
+
+
+
+const buttonRight = document.getElementById('rightcl');
+const buttonLeft = document.getElementById('leftcl');
+
+buttonRight.onclick = function () {
+  document.getElementById('cardsdiv').scrollLeft += 300;
+};
+buttonLeft.onclick = function () {
+  document.getElementById('cardsdiv').scrollLeft -= 300;
+};
+
+
+gsap.from("#page1>h1",{
+  opacity:0,
+  paddingTop:"50px",
+  duration:0.5
+})
+
+gsap.from("#page1>h2",{
+  opacity:0,
+  paddingTop:"50px",
+  duration:0.5,
+  delay:0.3
+})
+
+gsap.from("#aandcolor",{
+  opacity:0,
+  paddingTop:"50px",
+  duration:0.5,
+  delay:0.4
+})
+
+gsap.from("#ebtm",{
+  scrollTrigger:{
+    markers:true,
+    trigger:"#ebtm",
+    scroller:"#main",
+    start:"top 80%",
+    end:"top 70%",
+    scrub:3
+
+
+  },
+  opacity:0,
+  paddingTop:"50px",
+  duration:0.2,
+  
+})
